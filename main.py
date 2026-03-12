@@ -13,7 +13,7 @@ if __name__ == "__main__":
         api_id=Config.API_ID,
         api_hash=Config.API_HASH,
         sleep_threshold=120,
-        plugins=Plugins,
+        plugins = dict(root="Plugins")
         workers=10000,
     )
     async def main():
